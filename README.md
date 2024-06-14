@@ -1,5 +1,5 @@
 # Function-Approximation
-We use a Radial Basis Function (RBF) neural network to predict the hypersurface of analytical functions. Initially, we predict a smooth harmonic function on 2D points, followed by predicting an exponential function on 3D input points. To evaluate the robustness of our model, we add noise with an amplitude of 0.1 to our data. A good model should be insensitive to this noise.
+We use a Radial Basis Function (RBF) neural network to predict the hypersurface of analytical functions. Initially, we predict a smooth harmonic function on 2D points, followed by predicting an exponential function on 3D input points. To evaluate the robustness of our model, we add AWGN noise with an amplitude of 0.1 to our data. A good model should be insensitive to this noise.
 <br>
 
 ### Radial basis function network
