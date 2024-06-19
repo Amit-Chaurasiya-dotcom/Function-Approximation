@@ -10,16 +10,20 @@ def GenerateData(shape,F,NoiseAmplitude = 0):
     y= y + Noise
     return X,y
 
-def VisualizeData2D(X,y,title=""):
+def VisualizeData2D(X,y,title="",xlabel = "",ylabel = ""):
     plt.tricontourf(X[:,0],X[:,1],y)
     plt.colorbar()
     plt.title(title)
+    plt.xlabel(xlabel)
+    plt.ylabel(ylabel)
     plt.show()
 
-def VisualizeData3D(X,y,title=""):
+def VisualizeData3D(X,y,title="",xlabel = "",ylabel = ""):
     ax = plt.axes(projection="3d")
     img = ax.scatter3D(X[:,0],X[:,1],X[:,2],c = y)
     plt.title(title)
+    plt.xlabel(xlabel)
+    plt.ylabel(ylabel)
     plt.colorbar(img)
     plt.show()
 
